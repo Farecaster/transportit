@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.transportit.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_login2Fragment"
+            app:destination="@id/login2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.transportit.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2Fragment"
+        android:name="com.example.transportit.login2Fragment"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/action_login2Fragment_to_sellerFragment"
+            app:destination="@id/sellerFragment" />
+        <action
+            android:id="@+id/action_login2Fragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellerFragment"
+        android:name="com.example.transportit.sellerFragment"
+        android:label="fragment_seller"
+        tools:layout="@layout/fragment_seller" >
+        <action
+            android:id="@+id/action_sellerFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_sellerFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <argument
+            android:name="_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sellerFragment_to_bookingSellerFragment"
+            app:destination="@id/bookingSellerFragment" />
+        <action
+            android:id="@+id/action_sellerFragment_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.transportit.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.transportit.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.transportit.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <argument
+            android:name="truckName"
+            app:argType="string" />
+        <argument
+            android:name="dimension"
+            app:argType="string" />
+        <argument
+            android:name="payload"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="ownerId"
+            app:argType="string" />
+        <argument
+            android:name="imageData"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.transportit.requestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_request" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <argument
+            android:name="truckName"
+            app:argType="string" />
+        <argument
+            android:name="dimension"
+            app:argType="string" />
+        <argument
+            android:name="payload"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="ownerId"
+            app:argType="string" />
+        <argument
+            android:name="imageData"
+            app:argType="string" />
+        <argument
+            android:name="requesterId"
+            app:argType="string" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.example.transportit.viewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" >
+        <action
+            android:id="@+id/action_viewFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <argument
+            android:name="truckName"
+            app:argType="string" />
+        <argument
+            android:name="dimension"
+            app:argType="string" />
+        <argument
+            android:name="payload"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="ownerId"
+            app:argType="string" />
+        <argument
+            android:name="imageData"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_viewFragment_to_imageDialogFragment"
+            app:destination="@id/imageDialogFragment" />
+        <action
+            android:id="@+id/action_viewFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <argument
+            android:name="requesterId"
+            app:argType="string" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.transportit.registrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/imageDialogFragment"
+        android:name="com.example.transportit.ImageDialogFragment"
+        android:label="fragment_image_dialog"
+        tools:layout="@layout/fragment_image_dialog" >
+        <argument
+            android:name="imageData"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.transportit.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_profileFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+        <argument
+            android:name="requesterId"
+            app:argType="string" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.transportit.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingSellerFragment"
+        android:name="com.example.transportit.BookingSellerFragment"
+        android:label="fragment_booking_seller"
+        tools:layout="@layout/fragment_booking_seller" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_bookingSellerFragment_to_viewDetailsFragment2"
+            app:destination="@id/viewDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewDetailsFragment2"
+        android:name="com.example.transportit.ViewDetailsFragment"
+        android:label="fragment_viewdetails"
+        tools:layout="@layout/fragment_viewdetails" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <argument
+            android:name="requesterId"
+            app:argType="string" />
+        <argument
+            android:name="requesterUsername"
+            app:argType="string" />
+        <argument
+            android:name="ownerId"
+            app:argType="string" />
+        <argument
+            android:name="status"
+            app:argType="string" />
+        <argument
+            android:name="dateRequested"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="fromLocation"
+            app:argType="string" />
+        <argument
+            android:name="toLocation"
+            app:argType="string" />
+        <argument
+            android:name="goodsType"
+            app:argType="string" />
+        <argument
+            android:name="goodsWeight"
+            app:argType="string" />
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainProfileFragment"
+        android:name="com.example.transportit.MainProfileFragment"
+        android:label="fragment_main_profile"
+        tools:layout="@layout/fragment_main_profile" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>

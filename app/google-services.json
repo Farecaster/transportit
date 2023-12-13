@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "962857203810",
+    "firebase_url": "https://fir-tutorial-d1e2d-default-rtdb.firebaseio.com",
+    "project_id": "fir-tutorial-d1e2d",
+    "storage_bucket": "fir-tutorial-d1e2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962857203810:android:12c14c2d5f38a522f3793b",
+        "android_client_info": {
+          "package_name": "com.example.firebasetutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAnJoqwoJryotW750itG-dBm9PDXPnrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962857203810:android:0f78c6a76b5f8308f3793b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAnJoqwoJryotW750itG-dBm9PDXPnrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962857203810:android:4c94e3e49d618a82f3793b",
+        "android_client_info": {
+          "package_name": "com.example.transportit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAnJoqwoJryotW750itG-dBm9PDXPnrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962857203810:android:31eb2708b2624c47f3793b",
+        "android_client_info": {
+          "package_name": "com.example.truckbooking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAnJoqwoJryotW750itG-dBm9PDXPnrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
